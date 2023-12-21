@@ -11,9 +11,10 @@ function HomePage() {
   const dispatch = useAppDispatch();
 
   return (
-    <div>
-      <h1>total: {count}</h1>
+    <div className="flex flex-col items-center  ">
+      <h1 className="m-10 text-2xl	">total: {count}</h1>
       <button
+        className="border-2 mx-20 p-2"
         onClick={() => {
           dispatch(increment());
         }}
@@ -23,6 +24,7 @@ function HomePage() {
 
       <br />
       <button
+        className="border-2 mx-20 p-2"
         onClick={() => {
           dispatch(decrement());
         }}
